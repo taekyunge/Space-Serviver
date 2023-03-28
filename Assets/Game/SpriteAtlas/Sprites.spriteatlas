@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: adaac68d8e5d693499597113889d11d3, type: 3}
+    - {fileID: 2800000, guid: 36213be7768037e44898d0e8dbee419b, type: 3}
+    - {fileID: 2800000, guid: b8ee956496fbb764e91b82651871348e, type: 3}
+    - {fileID: 2800000, guid: 9a82544a4e8ea82448062dac5853f931, type: 3}
+    - {fileID: 2800000, guid: 97362c8821fe2f7449927570ad6d4d6a, type: 3}
+    - {fileID: 2800000, guid: 7524ab7a7f453474dbfc0e05e8b92539, type: 3}
+    - {fileID: 2800000, guid: fc9d7ac77b80e424d9c6d2890f9af52b, type: 3}
+    - {fileID: 2800000, guid: 87ffe403ed1efd9458e0e74d12890012, type: 3}
+    - {fileID: 2800000, guid: 720ac4fdbef3a144cb48fa9a4e18f746, type: 3}
+    - {fileID: 2800000, guid: 2c6b152263244e940b53e79d232a085e, type: 3}
+    - {fileID: 2800000, guid: 96df5282e804a6f488e4b55e33dbbef2, type: 3}
+    - {fileID: 2800000, guid: f5b592c8f7ef05841877f70aee73a432, type: 3}
+    - {fileID: 2800000, guid: 686161071ef7775448055f798bea6d70, type: 3}
+    - {fileID: 2800000, guid: 3df3c7a773f95f5429f29f0c38bee4a1, type: 3}
+    - {fileID: 2800000, guid: 76caf5e4ca559764484493b1342b0952, type: 3}
+    - {fileID: 2800000, guid: 5343b7115bd89c64982db3f2216a0c0f, type: 3}
+    - {fileID: 2800000, guid: 720936d3887635548b5eca76a7978798, type: 3}
+    - {fileID: 2800000, guid: eca1954e3092f6c468c69c10d19a6413, type: 3}
+    - {fileID: 2800000, guid: 5aabaadcd5e8dce4296119d032114c28, type: 3}
+    - {fileID: 2800000, guid: c2e882058c776c244adf87fa24d5282f, type: 3}
+    - {fileID: 2800000, guid: 166b89c253b5c5f42823a753d2db9770, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 5343b7115bd89c64982db3f2216a0c0f, type: 3}
+  - {fileID: 21300000, guid: 2c6b152263244e940b53e79d232a085e, type: 3}
+  - {fileID: 21300000, guid: 96df5282e804a6f488e4b55e33dbbef2, type: 3}
+  - {fileID: 21300000, guid: 166b89c253b5c5f42823a753d2db9770, type: 3}
+  - {fileID: 21300000, guid: 87ffe403ed1efd9458e0e74d12890012, type: 3}
+  - {fileID: 21300000, guid: 720936d3887635548b5eca76a7978798, type: 3}
+  - {fileID: 21300000, guid: b8ee956496fbb764e91b82651871348e, type: 3}
+  - {fileID: 21300000, guid: 76caf5e4ca559764484493b1342b0952, type: 3}
+  - {fileID: 21300000, guid: c2e882058c776c244adf87fa24d5282f, type: 3}
+  - {fileID: 21300000, guid: 686161071ef7775448055f798bea6d70, type: 3}
+  - {fileID: 21300000, guid: 3df3c7a773f95f5429f29f0c38bee4a1, type: 3}
+  - {fileID: 21300000, guid: fc9d7ac77b80e424d9c6d2890f9af52b, type: 3}
+  - {fileID: 21300000, guid: 36213be7768037e44898d0e8dbee419b, type: 3}
+  - {fileID: 21300000, guid: 97362c8821fe2f7449927570ad6d4d6a, type: 3}
+  - {fileID: 21300000, guid: f5b592c8f7ef05841877f70aee73a432, type: 3}
+  - {fileID: 21300000, guid: 9a82544a4e8ea82448062dac5853f931, type: 3}
+  - {fileID: 21300000, guid: 7524ab7a7f453474dbfc0e05e8b92539, type: 3}
+  - {fileID: 21300000, guid: 5aabaadcd5e8dce4296119d032114c28, type: 3}
+  - {fileID: 21300000, guid: adaac68d8e5d693499597113889d11d3, type: 3}
+  - {fileID: 21300000, guid: 720ac4fdbef3a144cb48fa9a4e18f746, type: 3}
+  - {fileID: 21300000, guid: eca1954e3092f6c468c69c10d19a6413, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - UI_Icon_Mushroom
+  - UI_Icon_Gas
+  - UI_Icon_Gem
+  - UI_Icon_scroll
+  - UI_Icon_Crown
+  - UI_Icon_Potion_1
+  - UI_Icon_bomb
+  - UI_Icon_Meat_2
+  - UI_Icon_Potion_4
+  - UI_Icon_Journal
+  - UI_Icon_Meat_1
+  - UI_Icon_Coin
+  - UI_Icon_Berry
+  - UI_Icon_Cheese
+  - UI_Icon_Hourglass
+  - UI_Icon_Bread
+  - UI_Icon_Clover_Leaf
+  - UI_Icon_Potion_3
+  - UI_Icon_Apple
+  - UI_Icon_Fish
+  - UI_Icon_Potion_2
+  m_Tag: Sprites
+  m_IsVariant: 0
