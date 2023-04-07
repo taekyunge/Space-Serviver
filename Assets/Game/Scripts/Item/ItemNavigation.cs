@@ -15,17 +15,12 @@ public class ItemNavigation : MonoBehaviour
 
     private float offset = 2;
 
-    private void Start()
-    {
-        
-    }
-
     public void SetItem(Item item)
     {
-        if(item != null)
-        {
-            TargetItem = item;
+        TargetItem = item;
 
+        if (item != null)
+        {
             itemImage.sprite = SpriteMgr.Instance.GetSprite(Data.ItemNames[(int)TargetItem.Type]);
             itemImage.SetNativeSize();
 

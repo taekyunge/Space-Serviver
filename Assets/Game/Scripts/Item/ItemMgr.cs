@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class ItemMgr : Singleton<ItemMgr>
 {
     private Pooling<Item> itemPool;
-    private List<Item> usedRandomItems = new List<Item>();
 
     [SerializeField] private Item baseItem;
     [SerializeField] private SpriteBounds mapBounds;
@@ -30,18 +30,19 @@ public class ItemMgr : Singleton<ItemMgr>
 
         deltaTime += Time.deltaTime;
 
+        var useItems = itemPool.GetAll().FindAll(x => x.Type != ItemType.COIN);
+        int index = 0;
+
         for (int i = 0; i < itemNavigations.Length; i++)
         {
             var navigation = itemNavigations[i];
 
-            if (i < usedRandomItems.Count)
+            if (i < useItems.Count)
             {
-                var item = usedRandomItems[i];
-
-                item.Navigation = navigation;
-
-                navigation.SetItem(item);
+                navigation.SetItem(useItems[i]);
             }
+            else
+                navigation.SetItem(null);
         }
     }
 
@@ -52,8 +53,6 @@ public class ItemMgr : Singleton<ItemMgr>
         item.Initialize();
         item.SetItem((ItemType)Random.Range(0, (int)ItemType.COIN));
         item.transform.position = Utill.GetRandomPointBounds(mapBounds);
-
-        usedRandomItems.Add(item);
     }
 
     public void CreateItem(Vector3 position, ItemType itemType)
@@ -67,14 +66,6 @@ public class ItemMgr : Singleton<ItemMgr>
 
     public void DeleteItem(Item item)
     {
-        if (item.Navigation != null)
-        {
-            usedRandomItems.Remove(item);
-
-            item.Navigation.TargetItem = null;
-            item.Navigation = null;
-        }
-
         itemPool.Delete(item);
     }
 }

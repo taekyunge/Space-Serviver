@@ -5,7 +5,6 @@ using UnityEngine;
 public class Item : MonoBehaviour
 {
     private MoveController moveController;
-    [HideInInspector] public ItemNavigation Navigation;
     [SerializeField] private SpriteRenderer spriteRenderer;
 
     public ItemType Type;
