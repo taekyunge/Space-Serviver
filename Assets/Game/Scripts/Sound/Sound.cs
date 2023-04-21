@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 게임 사운드
+/// </summary>
 public class Sound : MonoBehaviour
 {
     public SoundType SoundType;

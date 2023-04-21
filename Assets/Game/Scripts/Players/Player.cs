@@ -2,6 +2,9 @@
 using System.Collections;
 using UnityEngine.UI;
 
+/// <summary>
+/// 플레이어
+/// </summary>
 public class Player : MonoBehaviour
 {
     public static Player CurrentPlayer;
@@ -67,6 +70,7 @@ public class Player : MonoBehaviour
         Texts[6].text = (Level >= Data.MaxLevel) ? string.Format("레벨 : MAX") : string.Format("레벨 : {0} ({1}%)", Level, Exp * 100 / TotalExp);
         Texts[7].text = string.Format("자기장 범위 : {0}", RaderRadius);
 
+        // 무적 시간 체크
         if (invinciblilityTime <= 0)
         {
             invinciblilityTime = 0;
@@ -101,6 +105,7 @@ public class Player : MonoBehaviour
 
     private void MoveLimit()
     {
+        // 플레이어가 맵 밖으로 나가지 않도록 고정
         var position = transform.position;
 
         position.x = Mathf.Clamp(position.x, mapBounds.Min.x + collider.size.x, mapBounds.Max.x - collider.size.x);

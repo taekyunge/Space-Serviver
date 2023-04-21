@@ -2,9 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Sprite 영역 계산
+/// </summary>
 public class SpriteBounds : GameBounds
 {
     private SpriteRenderer spriteRenderer;
+
+    public new Vector2 Min { get { return spriteRenderer.bounds.min; } }
+    public new Vector2 Max { get { return spriteRenderer.bounds.max; } }
 
     private void Awake()
     {
@@ -17,23 +23,5 @@ public class SpriteBounds : GameBounds
 
         Width = spriteRenderer.size.x;
         Height = spriteRenderer.size.y;
-
-        SetBounds();
-    }
-
-    private void Update()
-    {
-        if (!UpdateBounds || spriteRenderer == null)
-            return;
-
-        SetBounds();
-    }
-
-    private void SetBounds()
-    {
-        Min.x = spriteRenderer.bounds.min.x;
-        Min.y = spriteRenderer.bounds.min.y;
-        Max.x = spriteRenderer.bounds.max.x;
-        Max.y = spriteRenderer.bounds.max.y;
     }
 }

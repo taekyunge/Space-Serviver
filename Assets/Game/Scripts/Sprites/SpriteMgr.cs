@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.U2D;
 
+/// <summary>
+/// 스프라이트 매니져
+/// </summary>
 public class SpriteMgr : Singleton<SpriteMgr>
 {
     [SerializeField]

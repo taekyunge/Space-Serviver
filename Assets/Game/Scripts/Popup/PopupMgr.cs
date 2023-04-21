@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 팝업 매니져
+/// </summary>
 public class PopupMgr : Singleton<PopupMgr>
 {
     [SerializeField] private Popup[] popups;

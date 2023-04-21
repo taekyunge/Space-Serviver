@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// 결과 팝업
+/// </summary>
 public class PopupResult : Popup
 {
     [SerializeField] private Text resultText;

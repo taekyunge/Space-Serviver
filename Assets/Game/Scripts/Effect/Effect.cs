@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 이펙트
+/// </summary>
 public class Effect : MonoBehaviour
 {
     public EffectType effectType;

@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 캐릭터 컨트롤러
+/// </summary>
 public class MoveController : MonoBehaviour
 {
     private Rigidbody2D rigidbody;

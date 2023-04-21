@@ -1,4 +1,7 @@
-﻿public enum SoundType
+﻿/// <summary>
+/// 사운드 타입
+/// </summary>
+public enum SoundType
 {
     BUTTON,
     ATTACK,

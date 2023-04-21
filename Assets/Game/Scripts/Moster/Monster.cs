@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 몬스터
+/// </summary>
 public class Monster : MonoBehaviour
 {
     private MoveController moveController;
@@ -105,7 +108,7 @@ public class Monster : MonoBehaviour
 
         target = null;
         collider.enabled = false;
-        animator.SetTrigger("Death");        
+        animator.SetTrigger("Death"); 
     }
 
     private void OnCollisionStay2D(Collision2D collision)

@@ -1,4 +1,7 @@
-﻿public enum ItemType : int
+﻿/// <summary>
+/// 아이템 타입
+/// </summary>
+public enum ItemType : int
 {
     HP,
     BOMB,

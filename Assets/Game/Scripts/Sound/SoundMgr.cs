@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 사운드 매니져
+/// </summary>
 public class SoundMgr : Singleton<SoundMgr>
 {
     [SerializeField] private Sound[] sounds;

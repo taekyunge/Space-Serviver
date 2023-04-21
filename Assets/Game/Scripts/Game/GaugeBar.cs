@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Player & Monster Hp
+/// </summary>
 public class GaugeBar : MonoBehaviour
 {
     [SerializeField] private Transform fillRect;

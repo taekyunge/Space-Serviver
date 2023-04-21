@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 게임 정보
+/// </summary>
 public static class Data 
 {
     #region Player

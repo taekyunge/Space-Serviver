@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 데미지 폰트 매니져 
+/// </summary>
 public class DamageMgr : Singleton<DamageMgr>
 {
     [SerializeField]

@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// 플레이어 무기
+/// </summary>
 public class Weapon : MonoBehaviour
 {
     private MoveController moveController;

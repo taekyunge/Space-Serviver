@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// 데미지 폰트
+/// </summary>
 public class DamageText : MonoBehaviour
 {
     [SerializeField]

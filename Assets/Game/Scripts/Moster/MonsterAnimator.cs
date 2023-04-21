@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 몬스터 애니메이터
+/// </summary>
 public class MonsterAnimator : MonoBehaviour
 {
     [SerializeField] private Monster monster;

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 카메라 화면 영역 계산
+/// </summary>
 public class CameraBounds : GameBounds
 {
     private Camera boundsCamera;

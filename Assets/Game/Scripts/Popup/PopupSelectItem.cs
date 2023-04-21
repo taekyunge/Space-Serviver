@@ -4,6 +4,9 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// 아이템 선택 화면
+/// </summary>
 public class PopupSelectItem : Popup
 {
     [SerializeField] private Image[] images;

@@ -4,8 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/// <summary>
+/// 게임 매니져
+/// </summary>
 public class GameMgr : Singleton<GameMgr>
 {
+    /// <summary>
+    /// 선택된 플레이어 인덱스
+    /// </summary>
     public static int SelectPlayer = 0;
     public string TimeValue;
 
@@ -31,6 +37,7 @@ public class GameMgr : Singleton<GameMgr>
 
     private void Update()
     {
+        // 플레이 타임 누적
         TimeValue = System.TimeSpan.FromSeconds(timeValue).ToString(@"mm\:ss");
         timeText.text = TimeValue;
 

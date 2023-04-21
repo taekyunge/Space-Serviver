@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// 몬스터 매니져
+/// </summary>
 public class MonsterMgr : Singleton<MonsterMgr>
 {
     private Pooling<Monster> monsterPool = null;
@@ -26,8 +29,10 @@ public class MonsterMgr : Singleton<MonsterMgr>
 
     private void Update()
     {
+        // 생성된 몬스터 수
         countText.text = string.Format("{0} 마리", monsterPool.count);
 
+        // 초마다 몬스터 생성
         if (deltaTime > createTime)
         {
             deltaTime = 0;
@@ -40,12 +45,15 @@ public class MonsterMgr : Singleton<MonsterMgr>
 
     private void CreateMonsters()
     {
+        // 생성 초는 플레이어의 레벨에 따라 짧아짐
         createTime = createTimeCurve.Evaluate(Player.CurrentPlayer.Level);
 
+        // 생성 수는 플레이어의 레벨에 따라 길어짐
         var createCount = Mathf.RoundToInt(createCountCurve.Evaluate(Player.CurrentPlayer.Level));
 
         for (int i = 0; i < createCount; i++)
         {
+            // 몬스터의 랜덤 위치를 카메라 영역 밖으로 지정
             var monster = monsterPool.Get(GetRandomPosition());
 
             monster.Initialize();
@@ -69,7 +77,7 @@ public class MonsterMgr : Singleton<MonsterMgr>
     }
 
     public Vector3 GetRandomPosition()
-    {
+    {        
         return Utill.GetRandomPointBetweenBounds(cameraBounds, mapBounds);
     }
 }

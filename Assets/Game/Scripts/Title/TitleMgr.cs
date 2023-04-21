@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+/// <summary>
+/// 타이틀 매니져
+/// </summary>
 public class TitleMgr : MonoBehaviour
 {
     private int selectPlayer = 0;

@@ -3,6 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
+/// <summary>
+/// 아이템 매니져
+/// </summary>
 public class ItemMgr : Singleton<ItemMgr>
 {
     private Pooling<Item> itemPool;
@@ -21,6 +24,7 @@ public class ItemMgr : Singleton<ItemMgr>
 
     private void Update()
     {
+        // 초 마다 랜덤으로 아이템 생성
         if(deltaTime > createTime)
         {
             deltaTime = 0;
@@ -30,8 +34,8 @@ public class ItemMgr : Singleton<ItemMgr>
 
         deltaTime += Time.deltaTime;
 
+        // 아이템 네비게이션 활성화
         var useItems = itemPool.GetAll().FindAll(x => x.Type != ItemType.COIN);
-        int index = 0;
 
         for (int i = 0; i < itemNavigations.Length; i++)
         {

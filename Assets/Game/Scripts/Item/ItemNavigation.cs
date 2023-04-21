@@ -2,6 +2,9 @@
 using System.Collections;
 using UnityEngine.UI;
 
+/// <summary>
+/// 아이템 네비게이션
+/// </summary>
 public class ItemNavigation : MonoBehaviour
 {
     [HideInInspector] public Item TargetItem;
@@ -39,10 +42,12 @@ public class ItemNavigation : MonoBehaviour
 
             if (itemScreenPos.x >= 0 && itemScreenPos.x < Screen.width && itemScreenPos.y >= 0 && itemScreenPos.y < Screen.height)
             {
+                // 추적하던 아이템이 인게임 카메라 화면 안으로 들어왔을 경우 비활성화
                 moveTransform.gameObject.SetActive(false);
             }
             else
             {
+                // 네비게이션 이 화면을 추적할때 화면 테두리로 고정
                 moveTransform.gameObject.SetActive(true);
 
                 var distance = TargetItem.transform.position - Player.CurrentPlayer.transform.position;

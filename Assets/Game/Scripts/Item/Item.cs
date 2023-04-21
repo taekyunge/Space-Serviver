@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 아이템
+/// </summary>
 public class Item : MonoBehaviour
 {
     private MoveController moveController;
@@ -22,10 +25,8 @@ public class Item : MonoBehaviour
         if (target == null)
             return;
 
-        var distance = Vector3.Distance(target.position , transform.position);
-
+        // 플레이어 자기장 영역안에 들어왔을 경우 플레이어에게 빨려들어가도록 움직임
         var movement = target.position - transform.position;
-        var angleAxis = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg;
 
         moveController.Move(movement.normalized * MoveSpeed * Time.fixedDeltaTime);
     }

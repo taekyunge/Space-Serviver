@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// 이펙트 관리 매니져
+/// </summary>
 public class EffectMgr : Singleton<EffectMgr>
 {
     [SerializeField] private Effect[] effects;
